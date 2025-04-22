@@ -2,22 +2,22 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 public class VoloPartenza extends Volo {
-    private Gate gateimbarco;
+    private String gateimbarco;
     private  String arrivo;
 
-    public VoloPartenza(String codice, String compagnia, String aereoporto_origine, String aereoporto_destinazione, Date datavolo, LocalDateTime oraarrivo, LocalDateTime ritardo, int numPosti) {
+    public VoloPartenza(String codice, String compagnia, String aereoporto_origine, String aereoporto_destinazione, Date datavolo, LocalDateTime oraarrivo, LocalDateTime ritardo, int numPosti,String gateimbarco) {
         super(codice, compagnia, aereoporto_origine, aereoporto_destinazione, datavolo, oraarrivo, ritardo, numPosti);
-        this.gateimbarco = null;
+        this.gateimbarco = gateimbarco;
         this.arrivo = arrivo;
     }
 
 
     // Getter e Setter per gateimbarco
-    public Gate getGateimbarco() {
+    public String getGateimbarco() {
         return gateimbarco;
     }
 
-    public void setGateimbarco(Gate gateimbarco) {
+    public void setGateimbarco(String gateimbarco) {
         this.gateimbarco = gateimbarco;
     }
 
