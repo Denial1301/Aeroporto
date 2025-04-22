@@ -1,8 +1,19 @@
-public class Utente extends Autenticazione {
+public class Utente  {
     private String pName;
     private String nVolo;
-    public Utente(String nome_utente, String password) {
-        super(nome_utente, password);
+    private String nome_utente;
+    private String password;
+   public Prenotazione(String pName, String nVolo, String nome_utente, String password) {
+        this.pName = pName;
+        this.nVolo = nVolo;
+        this.nome_utente = nome_utente;
+        this.password = password;
+    }
+    public void accesso(){
+    System.out.println("Accesso effettuato con: "   + nome_utente);
+    }
+public void registrazione(){
+    System.out.println("Registrazione effettuata con: " + nome_utente);
     }
 public void prenotaVolo(){
         System.out.println(getNomeUtente()+"ha prenotato il volo.");
