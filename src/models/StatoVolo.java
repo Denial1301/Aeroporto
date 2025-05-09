@@ -1,3 +1,5 @@
+package models;
+
 public class StatoVolo {
     private String programato;
     private boolean decolato;

@@ -1,3 +1,5 @@
+package models;
+
 public class Passeggero {
     private String nome;
     private String cognome;

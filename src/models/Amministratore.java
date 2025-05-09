@@ -1,3 +1,5 @@
+package models;
+
 public class Amministratore  {
         private StatoVolo VoliAmministrati;
         private String nome_amministratore;
@@ -8,16 +10,16 @@ public Amministratore(StatoVolo VoliAmministrati, String nome_amministratore, St
         this.password = password;
     }
         public void accesso(){
-    System.out.println("Accesso effettuato con: "   + nome_utente);
+    System.out.println("Accesso effettuato con: "   + nome_amministratore);
     }
 public void registrazione(){
-    System.out.println("Registrazione effettuata con: " + nome_utente);
+    System.out.println("Registrazione effettuata con: " + nome_amministratore);
     }
 
 public void InserisciVoli(){
-    System.out.println("Volo inserito.");
+    System.out.println("models.Volo inserito.");
     }
 public void AggiornaVolo(){
-        System.out.println("Volo aggiornato.");
+        System.out.println("models.Volo aggiornato.");
     }
 }

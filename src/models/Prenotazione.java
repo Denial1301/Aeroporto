@@ -1,3 +1,5 @@
+package models;
+
 public class Prenotazione {
     private String numPrenotazione;
     private String posto;
